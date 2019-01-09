@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="7dp"
+    android:background="@drawable/customborder"
+    android:layout_marginBottom="7dp"
+    android:id="@+id/parent_layout">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="11/12/2019"
+        android:textSize="16dp"
+        android:id="@+id/dateAdd"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_toRightOf="@id/dateAdd"
+        android:textSize="16dp"
+        android:text="QUICK BROWN FOX JUMP"
+        android:textStyle="bold"
+        android:id="@+id/NameItem"/>
+
+    <TextView
+        android:id="@+id/priceItem"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_toRightOf="@id/NameItem"
+        android:textAlignment="textEnd"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="#107c15"
+        android:text="Rp. 15000000000"/>
+
+</RelativeLayout>
