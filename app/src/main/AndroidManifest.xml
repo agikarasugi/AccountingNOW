@@ -22,7 +22,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".InputActivity" />
-        <activity android:name=".ListDetail"></activity>
+        <activity android:name=".ListDetail" />
+        <activity android:name=".aboutActivity"></activity>
     </application>
 
 </manifest>
