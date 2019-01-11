@@ -4,26 +4,81 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InputActivity">
+    tools:context=".InputActivity"
+    android:layout_margin="8dp">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:id="@+id/txtTitle"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="20sp" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitle"
         android:id="@+id/edtItem"
         android:hint="Input title here"/>
-
-    <EditText
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Date"
+        android:id="@+id/txtDate"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="20sp"
         android:layout_below="@+id/edtItem"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDate"
         android:id="@+id/edtDate"
-        android:hint="Input date here"/>
+        android:hint="dd/mm/yyyy"
+        android:inputType="date"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:id="@+id/txtPrice"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_below="@+id/edtDate"
+        />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/edtDate"
+        android:layout_below="@+id/txtPrice"
         android:id="@+id/edtPrice"
-        android:hint="Input price here"/>
+        android:hint="Input price here"
+        android:inputType="number"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:id="@+id/txtDesc"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_below="@+id/edtPrice"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDesc"
+        android:id="@+id/edtDesc"
+        android:hint="Input description here"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtDesc"
+        android:id="@+id/btnDone"
+        android:text="ADD"
+        android:textStyle="bold"/>
 
 </RelativeLayout>
