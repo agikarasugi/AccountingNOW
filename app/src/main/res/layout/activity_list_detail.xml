@@ -4,34 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListDetail">
+    tools:context=".ListDetail"
+    android:layout_margin="10dp">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
         android:id="@+id/txtTitle"
         android:text="THIS IS TEXT"
         android:textColor="#000000"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
         android:layout_below="@+id/txtTitle"
         android:id="@+id/txtDate"
         android:text="01/01/2001"
         android:textColor="#000000"
-        android:textSize="20dp"
+        android:textSize="20sp"
         />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingBottom="40dp"
         android:layout_below="@+id/txtDate"
         android:id="@+id/txtPrice"
         android:text="Rp0"
         android:textColor="#000000"
-        android:textSize="40dp"/>
+        android:textSize="30sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/txtPrice"
+        android:id="@+id/ttlDesc"
+        android:text="Description :"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ttlDesc"
+        android:id="@+id/txtDesc"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        android:textSize="16sp"
+        android:textColor="#000000"
+        />
 
 </RelativeLayout>

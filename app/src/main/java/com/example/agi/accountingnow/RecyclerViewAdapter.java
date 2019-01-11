@@ -12,6 +12,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -21,12 +24,14 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     private ArrayList<String> mDateHolder = new ArrayList<>();
     private ArrayList<String> mItemHolder = new ArrayList<>();
     private ArrayList<String> mPriceHolder = new ArrayList<>();
+    private ArrayList<String> mDescHolder = new ArrayList<>();
     private Context mContext;
 
-    public RecyclerViewAdapter(Context mContext, ArrayList<String> mDateHolder, ArrayList<String> mItemHolder, ArrayList<String> mPriceHolder) {
+    public RecyclerViewAdapter(Context mContext, ArrayList<String> mDateHolder, ArrayList<String> mItemHolder, ArrayList<String> mPriceHolder, ArrayList<String> mDescHolder) {
         this.mDateHolder = mDateHolder;
         this.mItemHolder = mItemHolder;
         this.mPriceHolder = mPriceHolder;
+        this.mDescHolder = mDescHolder;
         this.mContext = mContext;
     }
 
@@ -58,6 +63,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                 extras.putString("EXTRA_DATE", mDateHolder.get(position));
                 extras.putString("EXTRA_ITEM", mItemHolder.get(position));
                 extras.putString("EXTRA_PRICE", mPriceHolder.get(position));
+                extras.putString("EXTRA_DESC", mDescHolder.get(position));
                 intent.putExtras(extras);
                 mContext.startActivity(intent);
             }

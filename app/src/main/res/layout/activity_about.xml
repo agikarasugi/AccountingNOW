@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aboutActivity"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/heading1"
+        android:text="AccountingNow!"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#000000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading1"
+        android:id="@+id/author"
+        android:text="Created by I Putu Agi Karasugi and Jacksen"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/author"
+        android:layout_marginTop="30dp"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:id="@+id/p1"
+        android:text="Proyek DSC Tahun Baru untuk dikumpulkan tanggal 11 Januari 2019"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/p1"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:id="@+id/p2"
+        android:text="Sebuah aplikasi pencatatan pengeluaran dan pememasukan sederhana dari kami, dibuat untuk mempelajari Android development dan sebagai assignment dari Developer Student Clubs Binus."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/p2"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:id="@+id/p3"
+        android:text="Aplikasi ini ditujukan untuk para pemilik bisnis kecil untuk melacak pengeluaran dan pemasukan mereka dengan lebih mudah. Dengan ini, para pemilik bisnis dapat melihat rincian pengeluaran dan pemasukan mereka dalam satu aplikasi yang mudah digunakan dan ringkas."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/p3"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:id="@+id/p4"
+        android:text="Developer:\n- I Putu Agi Karasugi (2101663501),\n- Jacksen (2101645530)"/>
+
+</RelativeLayout>
